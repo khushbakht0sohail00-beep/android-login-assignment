@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/cc">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Register"   android:textStyle="bold" android:textSize="40sp"
+            android:textColor="#6F4E37"
+            android:shadowColor="#FFF8DC"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="12dp"      android:layout_marginTop="100dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/full_name_optional"
+
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:background="#88FFFFFF"
+            android:textColor="#3E2723"
+            tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:background="#88FFFFFF"
+            android:textColor="#8D6E63"
+            tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:hint="@string/password_min_6"
+
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:background="#88FFFFFF"
+            android:textColor="#8D6E63"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:background="#88FFFFFF"
+            android:textColor="#8D6E63"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/register"
+            android:textSize="20dp"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/tvLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/already_have_account_login"
+
+            android:textColor="@android:color/holo_blue_dark"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+</ScrollView>
